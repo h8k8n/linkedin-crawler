@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/api-gateway-module/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-gateway-module/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-module/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crawling-module/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crawling-module/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data-service-module/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server-module/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server-module/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/information-extraction-module/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/linkedin-account-module/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/linkedin-test-module/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/linkedin-test-module/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/proxy-server-module/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/security-module/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

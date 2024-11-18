@@ -1,0 +1,526 @@
+2024-11-18 19:21:45,642 INFO  [main] com.obss.softwarecrafter.GatewayApplication : Starting GatewayApplication using Java 22.0.2 with PID 5360 (C:\Users\hakan.sengul\Documents\WS\linkedin-crawler\api-gateway-module\target\classes started by hakan.sengul in C:\Users\hakan.sengul\Documents\WS\linkedin-crawler)
+2024-11-18 19:21:45,644 INFO  [main] com.obss.softwarecrafter.GatewayApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-18 19:21:47,324 INFO  [main] org.springframework.cloud.context.scope.GenericScope : BeanFactory id=a9680265-00f9-36a1-8281-f4aa2e742021
+2024-11-18 19:21:47,760 WARN  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-11-18 19:21:47,766 WARN  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-11-18 19:21:47,776 WARN  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-11-18 19:21:47,778 WARN  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-11-18 19:21:47,781 WARN  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-11-18 19:21:48,079 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8888 (http)
+2024-11-18 19:21:48,096 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-11-18 19:21:48,096 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-18 19:21:49,696 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [After]
+2024-11-18 19:21:49,696 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [Before]
+2024-11-18 19:21:49,696 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [Between]
+2024-11-18 19:21:49,696 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [Cookie]
+2024-11-18 19:21:49,696 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [Header]
+2024-11-18 19:21:49,696 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [Host]
+2024-11-18 19:21:49,696 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [Method]
+2024-11-18 19:21:49,696 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [Path]
+2024-11-18 19:21:49,696 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [Query]
+2024-11-18 19:21:49,696 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [ReadBody]
+2024-11-18 19:21:49,696 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [RemoteAddr]
+2024-11-18 19:21:49,696 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-11-18 19:21:49,697 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [Weight]
+2024-11-18 19:21:49,697 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-11-18 19:21:50,074 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 18 endpoints beneath base path '/actuator'
+2024-11-18 19:21:50,735 INFO  [main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-11-18 19:21:50,777 WARN  [main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-11-18 19:21:50,841 INFO  [main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory : Setting initial instance status as: STARTING
+2024-11-18 19:21:50,878 INFO  [main] com.netflix.discovery.DiscoveryClient : Initializing Eureka in region us-east-1
+2024-11-18 19:21:50,884 INFO  [main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 19:21:50,894 INFO  [main] com.netflix.discovery.DiscoveryClient : Disable delta property : false
+2024-11-18 19:21:50,895 INFO  [main] com.netflix.discovery.DiscoveryClient : Single vip registry refresh property : null
+2024-11-18 19:21:50,895 INFO  [main] com.netflix.discovery.DiscoveryClient : Force full registry fetch : false
+2024-11-18 19:21:50,895 INFO  [main] com.netflix.discovery.DiscoveryClient : Application is null : false
+2024-11-18 19:21:50,895 INFO  [main] com.netflix.discovery.DiscoveryClient : Registered Applications size is zero : true
+2024-11-18 19:21:50,895 INFO  [main] com.netflix.discovery.DiscoveryClient : Application version is -1: true
+2024-11-18 19:21:50,895 INFO  [main] com.netflix.discovery.DiscoveryClient : Getting all instance registry info from the eureka server
+2024-11-18 19:21:51,333 INFO  [main] com.netflix.discovery.DiscoveryClient : The response status is 200
+2024-11-18 19:21:51,335 INFO  [main] com.netflix.discovery.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2024-11-18 19:21:51,337 INFO  [main] com.netflix.discovery.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-11-18 19:21:51,339 INFO  [main] com.netflix.discovery.DiscoveryClient : Discovery Client initialized at timestamp 1731946911338 with initial instances count: 1
+2024-11-18 19:21:51,344 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Registering application GATEWAY-SERVICE with eureka with status UP
+2024-11-18 19:21:51,344 INFO  [main] com.netflix.discovery.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1731946911344, current=UP, previous=STARTING]
+2024-11-18 19:21:51,345 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient : DiscoveryClient_GATEWAY-SERVICE/DESKTOP-P73TMP8.mshome.net:gateway-service:8888: registering service...
+2024-11-18 19:21:51,429 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient : DiscoveryClient_GATEWAY-SERVICE/DESKTOP-P73TMP8.mshome.net:gateway-service:8888 - registration status: 204
+2024-11-18 19:21:51,463 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Unregistering application GATEWAY-SERVICE with eureka with status DOWN
+2024-11-18 19:21:51,464 INFO  [main] com.netflix.discovery.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1731946911464, current=DOWN, previous=UP]
+2024-11-18 19:21:51,464 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient : DiscoveryClient_GATEWAY-SERVICE/DESKTOP-P73TMP8.mshome.net:gateway-service:8888: registering service...
+2024-11-18 19:21:51,464 WARN  [main] org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-11-18 19:21:51,471 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient : DiscoveryClient_GATEWAY-SERVICE/DESKTOP-P73TMP8.mshome.net:gateway-service:8888 - registration status: 204
+2024-11-18 19:21:51,474 INFO  [main] com.netflix.discovery.DiscoveryClient : Shutting down DiscoveryClient ...
+2024-11-18 19:21:54,478 INFO  [main] com.netflix.discovery.DiscoveryClient : Unregistering ...
+2024-11-18 19:21:54,501 INFO  [main] com.netflix.discovery.DiscoveryClient : DiscoveryClient_GATEWAY-SERVICE/DESKTOP-P73TMP8.mshome.net:gateway-service:8888 - deregister  status: 200
+2024-11-18 19:21:54,502 INFO  [main] com.netflix.discovery.DiscoveryClient : Completed shut down of DiscoveryClient
+2024-11-18 19:21:54,513 INFO  [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-18 19:21:54,533 ERROR [main] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8888 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8888 or configure this application to listen on another port.
+
+2024-11-18 19:22:10,770 INFO  [main] com.obss.softwarecrafter.GatewayApplication : Starting GatewayApplication using Java 22.0.2 with PID 4588 (C:\Users\hakan.sengul\Documents\WS\linkedin-crawler\api-gateway-module\target\classes started by hakan.sengul in C:\Users\hakan.sengul\Documents\WS\linkedin-crawler)
+2024-11-18 19:22:10,773 INFO  [main] com.obss.softwarecrafter.GatewayApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-18 19:22:12,195 INFO  [main] org.springframework.cloud.context.scope.GenericScope : BeanFactory id=a9680265-00f9-36a1-8281-f4aa2e742021
+2024-11-18 19:22:12,433 WARN  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-11-18 19:22:12,436 WARN  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-11-18 19:22:12,441 WARN  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-11-18 19:22:12,443 WARN  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-11-18 19:22:12,446 WARN  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-11-18 19:22:12,690 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8888 (http)
+2024-11-18 19:22:12,705 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-11-18 19:22:12,705 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-18 19:22:13,824 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [After]
+2024-11-18 19:22:13,824 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [Before]
+2024-11-18 19:22:13,824 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [Between]
+2024-11-18 19:22:13,824 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [Cookie]
+2024-11-18 19:22:13,824 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [Header]
+2024-11-18 19:22:13,824 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [Host]
+2024-11-18 19:22:13,824 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [Method]
+2024-11-18 19:22:13,824 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [Path]
+2024-11-18 19:22:13,824 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [Query]
+2024-11-18 19:22:13,824 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [ReadBody]
+2024-11-18 19:22:13,824 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [RemoteAddr]
+2024-11-18 19:22:13,824 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-11-18 19:22:13,824 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [Weight]
+2024-11-18 19:22:13,825 INFO  [main] org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-11-18 19:22:14,149 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 18 endpoints beneath base path '/actuator'
+2024-11-18 19:22:14,719 INFO  [main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-11-18 19:22:14,765 WARN  [main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-11-18 19:22:14,817 INFO  [main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory : Setting initial instance status as: STARTING
+2024-11-18 19:22:14,841 INFO  [main] com.netflix.discovery.DiscoveryClient : Initializing Eureka in region us-east-1
+2024-11-18 19:22:14,845 INFO  [main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 19:22:14,854 INFO  [main] com.netflix.discovery.DiscoveryClient : Disable delta property : false
+2024-11-18 19:22:14,854 INFO  [main] com.netflix.discovery.DiscoveryClient : Single vip registry refresh property : null
+2024-11-18 19:22:14,854 INFO  [main] com.netflix.discovery.DiscoveryClient : Force full registry fetch : false
+2024-11-18 19:22:14,854 INFO  [main] com.netflix.discovery.DiscoveryClient : Application is null : false
+2024-11-18 19:22:14,854 INFO  [main] com.netflix.discovery.DiscoveryClient : Registered Applications size is zero : true
+2024-11-18 19:22:14,855 INFO  [main] com.netflix.discovery.DiscoveryClient : Application version is -1: true
+2024-11-18 19:22:14,855 INFO  [main] com.netflix.discovery.DiscoveryClient : Getting all instance registry info from the eureka server
+2024-11-18 19:22:15,178 INFO  [main] com.netflix.discovery.DiscoveryClient : The response status is 200
+2024-11-18 19:22:15,179 INFO  [main] com.netflix.discovery.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2024-11-18 19:22:15,181 INFO  [main] com.netflix.discovery.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-11-18 19:22:15,183 INFO  [main] com.netflix.discovery.DiscoveryClient : Discovery Client initialized at timestamp 1731946935182 with initial instances count: 0
+2024-11-18 19:22:15,191 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Registering application GATEWAY-SERVICE with eureka with status UP
+2024-11-18 19:22:15,192 INFO  [main] com.netflix.discovery.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1731946935192, current=UP, previous=STARTING]
+2024-11-18 19:22:15,195 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient : DiscoveryClient_GATEWAY-SERVICE/DESKTOP-P73TMP8.mshome.net:gateway-service:8888: registering service...
+2024-11-18 19:22:15,245 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient : DiscoveryClient_GATEWAY-SERVICE/DESKTOP-P73TMP8.mshome.net:gateway-service:8888 - registration status: 204
+2024-11-18 19:22:15,334 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8888 (http)
+2024-11-18 19:22:15,336 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration : Updating port to 8888
+2024-11-18 19:22:15,388 INFO  [main] com.obss.softwarecrafter.GatewayApplication : Started GatewayApplication in 5.311 seconds (process running for 5.785)
+2024-11-18 19:22:45,190 INFO  [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient : Disable delta property : false
+2024-11-18 19:22:45,191 INFO  [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient : Single vip registry refresh property : null
+2024-11-18 19:22:45,191 INFO  [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient : Force full registry fetch : false
+2024-11-18 19:22:45,191 INFO  [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient : Application is null : false
+2024-11-18 19:22:45,191 INFO  [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient : Registered Applications size is zero : true
+2024-11-18 19:22:45,191 INFO  [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient : Application version is -1: false
+2024-11-18 19:22:45,191 INFO  [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient : Getting all instance registry info from the eureka server
+2024-11-18 19:22:45,220 INFO  [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient : The response status is 200
+2024-11-18 19:27:14,857 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 19:32:14,868 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 19:37:14,878 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 19:42:14,890 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 19:47:14,898 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 19:52:14,904 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 19:57:14,911 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 20:02:14,920 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 20:07:14,921 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 20:12:14,936 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 20:17:14,949 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 20:22:14,963 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 20:25:07,130 ERROR [http-nio-8888-exec-7] org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler : [7562bb07]  500 Server Error for HTTP GET "/api/crawling/"
+io.jsonwebtoken.ExpiredJwtException: JWT expired 1874110 milliseconds ago at 2024-11-18T16:53:53.000Z. Current time: 2024-11-18T17:25:07.110Z. Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:691)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ AuthenticationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ CorsWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/api/crawling/" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:691)
+		at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:364)
+		at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:94)
+		at io.jsonwebtoken.impl.io.AbstractParser.parse(AbstractParser.java:36)
+		at io.jsonwebtoken.impl.io.AbstractParser.parse(AbstractParser.java:29)
+		at io.jsonwebtoken.impl.DefaultJwtParser.parseSignedClaims(DefaultJwtParser.java:830)
+		at com.obss.softwarecrafter.util.JwtUtil.getUsernameFromToken(JwtUtil.java:43)
+		at com.obss.softwarecrafter.security.JwtServerAuthenticationConverter.createUserDetails(JwtServerAuthenticationConverter.java:48)
+		at com.obss.softwarecrafter.security.JwtServerAuthenticationConverter.lambda$convert$2(JwtServerAuthenticationConverter.java:44)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:113)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onNext(FluxFilterFuseable.java:118)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2571)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.request(FluxFilterFuseable.java:191)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.request(FluxMapFuseable.java:171)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.request(FluxMapFuseable.java:171)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onSubscribe(MonoFlatMap.java:291)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onSubscribe(FluxMapFuseable.java:96)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onSubscribe(FluxMapFuseable.java:96)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onSubscribe(FluxFilterFuseable.java:87)
+		at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:165)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onNext(FluxFilterFuseable.java:118)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2571)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.request(FluxFilterFuseable.java:191)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.request(MonoFlatMap.java:194)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2367)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2241)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onSubscribe(MonoFlatMap.java:117)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onSubscribe(FluxFilterFuseable.java:87)
+		at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDeferContextual.subscribe(MonoDeferContextual.java:55)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:165)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondComplete(MonoFlatMap.java:245)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onNext(MonoFlatMap.java:305)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollectList$MonoCollectListSubscriber.onComplete(MonoCollectList.java:118)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.fastPath(FluxIterable.java:424)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:291)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.request(Operators.java:2067)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onSubscribe(MonoFlatMap.java:291)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.onSubscribe(Operators.java:2051)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:201)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:83)
+		at reactor.core.publisher.MonoFromFluxOperator.subscribe(MonoFromFluxOperator.java:83)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:165)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+		at reactor.core.publisher.FluxFilterWhen$FluxFilterWhenSubscriber.drain(FluxFilterWhen.java:302)
+		at reactor.core.publisher.FluxFilterWhen$FluxFilterWhenSubscriber.onNext(FluxFilterWhen.java:140)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:335)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:294)
+		at reactor.core.publisher.FluxFilterWhen$FluxFilterWhenSubscriber.onSubscribe(FluxFilterWhen.java:200)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:201)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:83)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:265)
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+		at org.springframework.http.server.reactive.ServletHttpHandlerAdapter.service(ServletHttpHandlerAdapter.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-11-18 20:25:07,176 ERROR [http-nio-8888-exec-6] org.springframework.boot.autoconfigure.web.reactive.error.AbstractErrorWebExceptionHandler : [3d3d9f2b]  500 Server Error for HTTP GET "/api/crawling/filter-definitions"
+io.jsonwebtoken.ExpiredJwtException: JWT expired 1874175 milliseconds ago at 2024-11-18T16:53:53.000Z. Current time: 2024-11-18T17:25:07.175Z. Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:691)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ AuthenticationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ CorsWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/api/crawling/filter-definitions" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:691)
+		at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:364)
+		at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:94)
+		at io.jsonwebtoken.impl.io.AbstractParser.parse(AbstractParser.java:36)
+		at io.jsonwebtoken.impl.io.AbstractParser.parse(AbstractParser.java:29)
+		at io.jsonwebtoken.impl.DefaultJwtParser.parseSignedClaims(DefaultJwtParser.java:830)
+		at com.obss.softwarecrafter.util.JwtUtil.getUsernameFromToken(JwtUtil.java:43)
+		at com.obss.softwarecrafter.security.JwtServerAuthenticationConverter.createUserDetails(JwtServerAuthenticationConverter.java:48)
+		at com.obss.softwarecrafter.security.JwtServerAuthenticationConverter.lambda$convert$2(JwtServerAuthenticationConverter.java:44)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:113)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onNext(FluxFilterFuseable.java:118)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2571)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.request(FluxFilterFuseable.java:191)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.request(FluxMapFuseable.java:171)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.request(FluxMapFuseable.java:171)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onSubscribe(MonoFlatMap.java:291)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onSubscribe(FluxMapFuseable.java:96)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onSubscribe(FluxMapFuseable.java:96)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onSubscribe(FluxFilterFuseable.java:87)
+		at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:165)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onNext(FluxFilterFuseable.java:118)
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2571)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.request(FluxFilterFuseable.java:191)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.request(MonoFlatMap.java:194)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2367)
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2241)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onSubscribe(MonoFlatMap.java:117)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onSubscribe(FluxFilterFuseable.java:87)
+		at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDeferContextual.subscribe(MonoDeferContextual.java:55)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:165)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondComplete(MonoFlatMap.java:245)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onNext(MonoFlatMap.java:305)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollectList$MonoCollectListSubscriber.onComplete(MonoCollectList.java:118)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.fastPath(FluxIterable.java:424)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:291)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.request(Operators.java:2067)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onSubscribe(MonoFlatMap.java:291)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.onSubscribe(Operators.java:2051)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:201)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:83)
+		at reactor.core.publisher.MonoFromFluxOperator.subscribe(MonoFromFluxOperator.java:83)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:165)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+		at reactor.core.publisher.FluxFilterWhen$FluxFilterWhenSubscriber.drain(FluxFilterWhen.java:302)
+		at reactor.core.publisher.FluxFilterWhen$FluxFilterWhenSubscriber.onNext(FluxFilterWhen.java:140)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:335)
+		at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:294)
+		at reactor.core.publisher.FluxFilterWhen$FluxFilterWhenSubscriber.onSubscribe(FluxFilterWhen.java:200)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:201)
+		at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:83)
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76)
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:265)
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+		at org.springframework.http.server.reactive.ServletHttpHandlerAdapter.service(ServletHttpHandlerAdapter.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+2024-11-18 20:27:14,974 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 20:32:14,990 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 20:37:14,995 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 20:42:14,997 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 20:47:15,006 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 20:52:15,008 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 20:57:15,015 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 21:02:15,019 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 21:07:15,022 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 21:12:15,030 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 21:17:15,044 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 21:22:15,045 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 21:27:15,049 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 21:32:15,053 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 21:37:15,062 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 21:42:15,069 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 21:47:15,076 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 21:52:15,087 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 21:57:15,093 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 22:02:15,099 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 22:07:15,101 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 22:12:15,113 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 22:17:15,118 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 22:22:15,121 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 22:27:15,123 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 22:32:15,133 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 22:37:15,135 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 22:42:15,137 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 22:47:15,142 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 22:52:15,153 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 22:57:15,166 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 23:02:15,178 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 23:07:15,184 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 23:12:15,200 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 23:17:15,203 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 23:20:06,378 WARN  [parallel-1] org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer : No servers available for service: security-module
+2024-11-18 23:20:10,737 WARN  [parallel-3] org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer : No servers available for service: security-module
+2024-11-18 23:22:15,210 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 23:22:39,479 WARN  [parallel-5] org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer : No servers available for service: security-module
+2024-11-18 23:22:43,190 WARN  [parallel-7] org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer : No servers available for service: security-module
+2024-11-18 23:23:05,734 INFO  [main] com.obss.softwarecrafter.SecurityApplication : Starting SecurityApplication using Java 22.0.2 with PID 17224 (C:\Users\hakan.sengul\Documents\WS\linkedin-crawler\security-module\target\classes started by hakan.sengul in C:\Users\hakan.sengul\Documents\WS\linkedin-crawler)
+2024-11-18 23:23:05,737 INFO  [main] com.obss.softwarecrafter.SecurityApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-18 23:23:06,813 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data LDAP repositories in DEFAULT mode.
+2024-11-18 23:23:06,836 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 LDAP repository interfaces.
+2024-11-18 23:23:07,104 INFO  [main] org.springframework.cloud.context.scope.GenericScope : BeanFactory id=bc156cd4-e953-3ae9-9a8c-84ea4122a424
+2024-11-18 23:23:07,183 WARN  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-11-18 23:23:07,185 WARN  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-11-18 23:23:07,508 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8084 (http)
+2024-11-18 23:23:07,528 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-11-18 23:23:07,528 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-18 23:23:07,592 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-11-18 23:23:07,592 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1809 ms
+2024-11-18 23:23:07,898 INFO  [main] org.springframework.ldap.core.support.AbstractContextSource : Property 'userDn' not set - anonymous context will be used for read-only operations
+2024-11-18 23:23:08,086 WARN  [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6673f07d-6135-44bb-81e2-f379294765c9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-11-18 23:23:08,093 INFO  [main] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-18 23:23:08,544 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 18 endpoints beneath base path '/actuator'
+2024-11-18 23:23:09,113 INFO  [main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-11-18 23:23:09,146 WARN  [main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-11-18 23:23:09,205 INFO  [main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory : Setting initial instance status as: STARTING
+2024-11-18 23:23:09,227 INFO  [main] com.netflix.discovery.DiscoveryClient : Initializing Eureka in region us-east-1
+2024-11-18 23:23:09,231 INFO  [main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 23:23:09,241 INFO  [main] com.netflix.discovery.DiscoveryClient : Disable delta property : false
+2024-11-18 23:23:09,241 INFO  [main] com.netflix.discovery.DiscoveryClient : Single vip registry refresh property : null
+2024-11-18 23:23:09,241 INFO  [main] com.netflix.discovery.DiscoveryClient : Force full registry fetch : false
+2024-11-18 23:23:09,241 INFO  [main] com.netflix.discovery.DiscoveryClient : Application is null : false
+2024-11-18 23:23:09,241 INFO  [main] com.netflix.discovery.DiscoveryClient : Registered Applications size is zero : true
+2024-11-18 23:23:09,242 INFO  [main] com.netflix.discovery.DiscoveryClient : Application version is -1: true
+2024-11-18 23:23:09,242 INFO  [main] com.netflix.discovery.DiscoveryClient : Getting all instance registry info from the eureka server
+2024-11-18 23:23:09,662 INFO  [main] com.netflix.discovery.DiscoveryClient : The response status is 200
+2024-11-18 23:23:09,663 INFO  [main] com.netflix.discovery.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2024-11-18 23:23:09,664 INFO  [main] com.netflix.discovery.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-11-18 23:23:09,665 INFO  [main] com.netflix.discovery.DiscoveryClient : Discovery Client initialized at timestamp 1731961389665 with initial instances count: 4
+2024-11-18 23:23:09,667 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Registering application SECURITY-MODULE with eureka with status UP
+2024-11-18 23:23:09,668 INFO  [main] com.netflix.discovery.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1731961389668, current=UP, previous=STARTING]
+2024-11-18 23:23:09,669 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient : DiscoveryClient_SECURITY-MODULE/DESKTOP-P73TMP8.mshome.net:security-module:8084: registering service...
+2024-11-18 23:23:09,687 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8084 (http) with context path '/'
+2024-11-18 23:23:09,688 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration : Updating port to 8084
+2024-11-18 23:23:09,712 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient : DiscoveryClient_SECURITY-MODULE/DESKTOP-P73TMP8.mshome.net:security-module:8084 - registration status: 204
+2024-11-18 23:23:09,715 INFO  [main] com.obss.softwarecrafter.SecurityApplication : Started SecurityApplication in 4.612 seconds (process running for 5.044)
+2024-11-18 23:27:15,223 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 23:28:09,252 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 23:32:15,237 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 23:33:09,257 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 23:33:57,708 INFO  [parallel-1] org.springdoc.api.AbstractOpenApiResource : Init duration for springdoc-openapi is: 83 ms
+2024-11-18 23:37:15,246 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 23:38:09,262 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 23:40:54,181 INFO  [http-nio-8084-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-18 23:40:54,182 INFO  [http-nio-8084-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-11-18 23:40:54,183 INFO  [http-nio-8084-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 1 ms
+2024-11-18 23:40:54,244 INFO  [http-nio-8084-exec-1] com.obss.softwarecrafter.controller.AuthController : login called
+2024-11-18 23:40:59,149 INFO  [http-nio-8084-exec-2] com.obss.softwarecrafter.controller.AuthController : login called
+2024-11-18 23:41:42,020 INFO  [SpringApplicationShutdownHook] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Unregistering application SECURITY-MODULE with eureka with status DOWN
+2024-11-18 23:41:42,021 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1731962502021, current=DOWN, previous=UP]
+2024-11-18 23:41:42,021 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient : DiscoveryClient_SECURITY-MODULE/DESKTOP-P73TMP8.mshome.net:security-module:8084: registering service...
+2024-11-18 23:41:42,028 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient : DiscoveryClient_SECURITY-MODULE/DESKTOP-P73TMP8.mshome.net:security-module:8084 - registration status: 204
+2024-11-18 23:41:42,077 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : Shutting down DiscoveryClient ...
+2024-11-18 23:41:45,084 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : Unregistering ...
+2024-11-18 23:41:45,103 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : DiscoveryClient_SECURITY-MODULE/DESKTOP-P73TMP8.mshome.net:security-module:8084 - deregister  status: 200
+2024-11-18 23:41:45,104 INFO  [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient : Completed shut down of DiscoveryClient
+2024-11-18 23:41:47,323 INFO  [main] com.obss.softwarecrafter.SecurityApplication : Starting SecurityApplication using Java 22.0.2 with PID 1420 (C:\Users\hakan.sengul\Documents\WS\linkedin-crawler\security-module\target\classes started by hakan.sengul in C:\Users\hakan.sengul\Documents\WS\linkedin-crawler)
+2024-11-18 23:41:47,326 INFO  [main] com.obss.softwarecrafter.SecurityApplication : No active profile set, falling back to 1 default profile: "default"
+2024-11-18 23:41:48,331 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data LDAP repositories in DEFAULT mode.
+2024-11-18 23:41:48,352 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 LDAP repository interfaces.
+2024-11-18 23:41:48,600 INFO  [main] org.springframework.cloud.context.scope.GenericScope : BeanFactory id=bc156cd4-e953-3ae9-9a8c-84ea4122a424
+2024-11-18 23:41:48,674 WARN  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-11-18 23:41:48,675 WARN  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-11-18 23:41:48,903 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 8084 (http)
+2024-11-18 23:41:48,915 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2024-11-18 23:41:48,916 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-18 23:41:48,986 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2024-11-18 23:41:48,987 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1614 ms
+2024-11-18 23:41:49,251 INFO  [main] org.springframework.ldap.core.support.AbstractContextSource : Property 'userDn' not set - anonymous context will be used for read-only operations
+2024-11-18 23:41:49,450 WARN  [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6e9b186a-b680-4b0b-b905-2f1b708b05a2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-11-18 23:41:49,456 INFO  [main] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-18 23:41:49,883 INFO  [main] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : Exposing 18 endpoints beneath base path '/actuator'
+2024-11-18 23:41:50,527 INFO  [main] org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-11-18 23:41:50,554 WARN  [main] org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-11-18 23:41:50,600 INFO  [main] org.springframework.cloud.netflix.eureka.InstanceInfoFactory : Setting initial instance status as: STARTING
+2024-11-18 23:41:50,619 INFO  [main] com.netflix.discovery.DiscoveryClient : Initializing Eureka in region us-east-1
+2024-11-18 23:41:50,623 INFO  [main] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 23:41:50,632 INFO  [main] com.netflix.discovery.DiscoveryClient : Disable delta property : false
+2024-11-18 23:41:50,632 INFO  [main] com.netflix.discovery.DiscoveryClient : Single vip registry refresh property : null
+2024-11-18 23:41:50,632 INFO  [main] com.netflix.discovery.DiscoveryClient : Force full registry fetch : false
+2024-11-18 23:41:50,632 INFO  [main] com.netflix.discovery.DiscoveryClient : Application is null : false
+2024-11-18 23:41:50,633 INFO  [main] com.netflix.discovery.DiscoveryClient : Registered Applications size is zero : true
+2024-11-18 23:41:50,633 INFO  [main] com.netflix.discovery.DiscoveryClient : Application version is -1: true
+2024-11-18 23:41:50,633 INFO  [main] com.netflix.discovery.DiscoveryClient : Getting all instance registry info from the eureka server
+2024-11-18 23:41:51,010 INFO  [main] com.netflix.discovery.DiscoveryClient : The response status is 200
+2024-11-18 23:41:51,012 INFO  [main] com.netflix.discovery.DiscoveryClient : Starting heartbeat executor: renew interval is: 30
+2024-11-18 23:41:51,014 INFO  [main] com.netflix.discovery.InstanceInfoReplicator : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-11-18 23:41:51,016 INFO  [main] com.netflix.discovery.DiscoveryClient : Discovery Client initialized at timestamp 1731962511015 with initial instances count: 4
+2024-11-18 23:41:51,018 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry : Registering application SECURITY-MODULE with eureka with status UP
+2024-11-18 23:41:51,019 INFO  [main] com.netflix.discovery.DiscoveryClient : Saw local status change event StatusChangeEvent [timestamp=1731962511019, current=UP, previous=STARTING]
+2024-11-18 23:41:51,021 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient : DiscoveryClient_SECURITY-MODULE/DESKTOP-P73TMP8.mshome.net:security-module:8084: registering service...
+2024-11-18 23:41:51,034 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 8084 (http) with context path '/'
+2024-11-18 23:41:51,035 INFO  [main] org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration : Updating port to 8084
+2024-11-18 23:41:51,053 INFO  [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient : DiscoveryClient_SECURITY-MODULE/DESKTOP-P73TMP8.mshome.net:security-module:8084 - registration status: 204
+2024-11-18 23:41:51,057 INFO  [main] com.obss.softwarecrafter.SecurityApplication : Started SecurityApplication in 4.358 seconds (process running for 4.769)
+2024-11-18 23:42:15,260 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 23:42:22,422 INFO  [http-nio-8084-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-18 23:42:22,423 INFO  [http-nio-8084-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2024-11-18 23:42:22,424 INFO  [http-nio-8084-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 1 ms
+2024-11-18 23:42:22,476 INFO  [http-nio-8084-exec-1] com.obss.softwarecrafter.controller.AuthController : login called
+2024-11-18 23:46:50,648 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 23:47:15,268 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 23:51:50,655 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 23:52:15,275 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 23:53:16,056 WARN  [parallel-7] org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer : No servers available for service: information-extraction-module
+2024-11-18 23:53:47,868 WARN  [parallel-1] org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer : No servers available for service: information-extraction-module
+2024-11-18 23:56:50,674 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-18 23:57:15,291 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-19 00:01:50,680 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-19 00:02:15,303 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-19 00:06:50,715 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-19 00:07:15,330 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-19 00:11:50,724 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration
+2024-11-19 00:12:15,346 INFO  [AsyncResolver-bootstrap-executor-%d] com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver : Resolving eureka endpoints via configuration

@@ -1,0 +1,103 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: 'true'
+    hibernate:
+      ddl-auto: update
+  application:
+    name: crawler-module
+  mvc:
+    cors:
+      allowed-origins: http://localhost:5173
+      allowed-headers: '*'
+      allowed-methods: GET,POST,PUT,DELETE
+  web:
+    cors:
+      api:
+        path-pattern: /api/**
+  datasource:
+    password: '1234'
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/linkedin-crawler
+  kafka:
+    producer:
+      bootstrap-servers: localhost:29092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        "[max.block.ms]": 5000
+        "[max.request.size]": 20971520
+    consumer:
+      enable-auto-commit: true
+      bootstrap-servers: localhost:29092
+      group-id: himanshu_consumer_group
+      auto-offset-reset: earliest
+      key-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: '*'
+        spring.deserializer.key.delegate.class: org.apache.kafka.common.serialization.StringDeserializer
+        spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
+springdoc:
+  api-docs:
+    path: /swagger-ui/crawling/v3/api-docs
+  swagger-ui:
+    path: /swagger-ui/crawling/swagger-ui.html
+server:
+  port: '8082'
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+crawler:
+  type: SELENIUM
+  thread-count: 5
+  unused-sections:
+    - content_collections
+    - services
+    - featured
+  linkedin-params:
+    login-url: https://www.linkedin.com/login
+    target-prefix-url:
+      person: https://www.linkedin.com/in/
+      company: https://www.linkedin.com/company/
+      school: https://www.linkedin.com/school/
+  filter-definitions:
+    - key: location
+      label: Konumlar
+      active: true
+    - key: current_company
+      label: Mevcut şirket
+      active: true
+    - key: old_company
+      label: Geçmiş şirket
+      active: true
+    - key: school
+      label: Okul
+      active: true
+    - key: title
+      label: Ünvan
+      active: true
+    - key: education-level
+      label: Eğitim Düzeyi
+      active: true
+      values: [ 'Lisans', 'Önlisans', 'Yüksek Lisans' ]
+    - key: department
+      label: Bölüm
+      active: false
+    - key: sector
+      label: Sektör
+      active: true
+    - key: service
+      label: Hizmetler
+      active: false
+gateway:
+  auth:
+    token: 3ff5617816af5572361077e980d9e4c1a1f1b5a533caa4fe5d359df3511eb507

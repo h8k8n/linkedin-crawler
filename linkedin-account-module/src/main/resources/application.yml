@@ -1,0 +1,36 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: 'true'
+    hibernate:
+      ddl-auto: update
+  application:
+    name: linkedin-account-module
+  mvc:
+    cors:
+      allowed-origins: http://localhost:5173
+      allowed-headers: '*'
+      allowed-methods: GET,POST,PUT,DELETE
+  web:
+    cors:
+      api:
+        path-pattern: /api/**
+  datasource:
+    password: '1234'
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/linkedin-crawler
+springdoc:
+  api-docs:
+    path: /swagger-ui/linkedin-account/v3/api-docs
+  swagger-ui:
+    path: /swagger-ui/linkedin-account/swagger-ui.html
+server:
+  port: '8083'
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true

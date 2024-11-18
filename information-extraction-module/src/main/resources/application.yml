@@ -1,0 +1,58 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: 'true'
+    hibernate:
+      ddl-auto: update
+  application:
+    name: information-extraction-module
+  mvc:
+    cors:
+      allowed-origins: http://localhost:5173
+      allowed-headers: '*'
+      allowed-methods: GET,POST,PUT,DELETE
+  web:
+    cors:
+      api:
+        path-pattern: /api/**
+  datasource:
+    password: '1234'
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/linkedin-crawler
+  kafka:
+    producer:
+      bootstrap-servers: localhost:29092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        "[max.block.ms]": 5000
+        "[max.request.size]": 20971520
+    consumer:
+      enable-auto-commit: true
+      bootstrap-servers: localhost:29092
+      group-id: himanshu_consumer_group
+      auto-offset-reset: earliest
+      key-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: '*'
+        spring.deserializer.key.delegate.class: org.apache.kafka.common.serialization.StringDeserializer
+        spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
+springdoc:
+  api-docs:
+    path: /swagger-ui/linkedin-profile/v3/api-docs
+  swagger-ui:
+    path: /swagger-ui/linkedin-profile/swagger-ui.html
+server:
+  port: '8081'
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
